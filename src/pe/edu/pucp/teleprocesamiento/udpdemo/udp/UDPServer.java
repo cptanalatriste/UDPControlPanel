@@ -1,6 +1,5 @@
 package pe.edu.pucp.teleprocesamiento.udpdemo.udp;
 
-import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
@@ -12,6 +11,9 @@ import java.util.logging.Logger;
 import pe.edu.pucp.teleprocesamiento.udpdemo.view.ControlPanelFrame;
 
 /**
+ *
+ * Listens to the current value of the variable and notifies the Frame to update
+ * the GUI.
  *
  * @author Carlos G. Gavidia (cgavidia@acm.org)
  */
@@ -33,10 +35,8 @@ public class UDPServer implements ActionListener {
             byte[] buffer = new byte[BUFFER_SIZE];
             DatagramPacket datagramPacket = new DatagramPacket(buffer, buffer.length);
             datagramSocket.receive(datagramPacket);
-            //System.out.println("Receiving data at port: " + datagramSocket.getPort());
             String data = new String(datagramPacket.getData());
             float dataAsFloat = Float.parseFloat(data);
-            //System.out.println("dataAsDouble: " + dataAsFloat);
             float[] newData = new float[1];
             newData[0] = dataAsFloat;
             controlPanelFrame.updateTimeSeries(newData);

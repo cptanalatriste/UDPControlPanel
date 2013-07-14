@@ -11,6 +11,8 @@ import javax.swing.JTextField;
 import pe.edu.pucp.teleprocesamiento.udpdemo.view.ControlPanelFrame;
 
 /**
+ * Allows to send a Set-Point change through UDP using GUI.
+ *
  *
  * @author Carlos G. Gavidia (cgavidia@acm.org)
  */

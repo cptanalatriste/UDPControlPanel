@@ -21,6 +21,9 @@ import pe.edu.pucp.teleprocesamiento.udpdemo.udp.UDPServer;
 
 /**
  *
+ * Frame that shows the current value of the monitored variable through a
+ * Dynamic Chart, it also allows the user to send a Set-Point request.
+ *
  * @author Carlos G. Gavidia (cgavidia@acm.org)
  */
 public class ControlPanelFrame extends ApplicationFrame {

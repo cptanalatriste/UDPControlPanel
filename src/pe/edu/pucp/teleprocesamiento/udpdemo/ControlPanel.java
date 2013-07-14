@@ -9,6 +9,8 @@ import pe.edu.pucp.teleprocesamiento.udpdemo.view.ControlPanelFrame;
 
 /**
  *
+ * Starts the Control Panel that monitors a variable through UDP.
+ *
  * @author Carlos G. Gavidia (cgavidia@acm.org)
  */
 public class ControlPanel {
